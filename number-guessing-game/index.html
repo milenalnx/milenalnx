@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<title>Number Guessing Game</title>
+</head>
+<body>
+	<div id="game">
+		<h3>Number guessing game</h3>
+		<p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+		<p>Enter a guess:</p>
+		<input type=text required name='txtstart' id='tinput' value=''>
+
+		<button id='sbutton' type="reset" value="Reset" onclick="clearText()">Submit</button>
+
+		<div id="retorno"></div>
+		<div id="pontos"></div>
+
+		<button id='novoJogo' type="button">Start new game</button>
+	</div>
+	
+</body>
+</html>
