@@ -1,77 +1,130 @@
-@import url('http://fonts.googleapis.com/css?family=Gabriela');
-
 #pagewrapper {
 	width: 100%;
-	height: 1000px;
-	background-color: yellow;
 }
 
-#header {
+body {
 	width: 100%;
-	height: 30%;
-	background-color: gray;
-}
-
-#content {
-	width: 100%;
-	height: 70%;
-	background-color: blue;
-	float: left;
-}
-
-.headertop {
-	width: 100%;
-	height: 20%;
-	background-color: pink;
-	text-align: right;
-}
-
-.headercenter {
-	width: 100%;
-	height: 50%;
-	background-color: orange;
-	text-align: center;
-}
-
-.headerbottom {
-	width: 100%;
-	height: 30%;
-	background-color: green;
+	font-family: 'Catamaran', serif;
 	font-size: 14px;
 }
 
-.headercenter ul li {
-	list-style-type: none;
+#header{
+	width: 65%;
+	text-align: right;
+	margin: auto;
+	padding-right: 60px;
 }
 
-.headerbottom ul li {
-	list-style-type: none;
+#header li{
+	display: inline-block;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  outline: none;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+#header p{
+	font-family: 'Khula', serif;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#header i {
+	font-size: 25px;
+	color: #cacaca;
+}
+
+#header i:hover {
+	color: #8a8a8a;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.contentwrapper{
+	clear: both;
+	width: 70%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#content-left{
+	width: 30%;
+	float: left;
+	padding: 30px;
+	margin-left: 5px;
+}
+
+#content-left p{
+	padding: 0px;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+h2 {
+	font-family: 'Khula', serif;
+	margin-left: 5px;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+#content-right{
+	margin-left: 45px;
+	width: 50%;
+	float: left;
+	padding: 30px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+.pic {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 50%;
+	display: block;
+	padding: 8px;
+	background: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+}
+
+#wrapper p {
+	color: #616161;
+	margin-top: 10px;
+}
+
+.portfolio i {
+	font-size: 18px;
+	color: #cacaca;
+	margin-right: 10px;
+}
+
+/* portfolio */
+
+@import url('http://fonts.googleapis.com/css?family=Gabriela');
+
+html, body, div, span, applet, object, iframe, /*h1, h2*/, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 html { overflow-y: scroll; }
-body {
-  background: #fcfcfc url('bg.png'); /* http://subtlepatterns.com/crossword/ */
-  font-size: 62.5%;
-  line-height: 1;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 45px 25px;
-  padding-bottom: 100px;
-}
+/*body {
+	font-size: 62.5%;
+	line-height: 1;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 45px 25px;
+	padding-bottom: 100px;
+}*/
 
 br { display: block; line-height: 1.6em; } 
 
@@ -79,13 +132,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ol, ul { list-style: none; }
 
 input, textarea { 
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
 }
 
 blockquote, q { quotes: none; }
@@ -96,54 +149,49 @@ em, i { font-style: italic; }
 table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
 
-h1 {
-  font-family: 'Gabriela', Tahoma, sans-serif;
-  font-size: 3.7em;
-  font-weight: 700;
-  line-height: 1.55em;
-  margin-bottom: 18px;
-  text-align: center;
-  color: #514b53;
-  letter-spacing: -0.06em;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
-}
+/*h1 {
+	font-family: 'Gabriela', Tahoma, sans-serif;
+	font-size: 3.7em;
+	font-weight: 700;
+	line-height: 1.55em;
+	margin-bottom: 18px;
+	text-align: center;
+	color: #514b53;
+	letter-spacing: -0.06em;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}*/
 
 /** page structure **/
 #wrapper {
-  display: block;
-  max-width: 1100px;
-  margin: 0 auto;
+	display: block;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
-#portfolio {
-  display: block;
+.portfolio li {
+	display: block;
+	float: left;
+	width: 30%;
+	max-width: 400px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-#portfolio li {
-  display: block;
-  float: left;
-  width: 30%;
-  max-width: 400px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-#portfolio li a {
-  display: block;
-  padding: 8px;
-  background: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
-  -moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
-  box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+.portfolio li a {
+	display: block;
+	padding: 8px;
+	background: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
 }
 
 .mfp-title {
-  font-size: 1.2em;
-  color: #ddd !important;
-  font-weight: 700;
+	font-size: 1em;
+	color: #ddd !important;
 }
 
 /** clearfix **/
@@ -156,20 +204,63 @@ html[xmlns] .clearfix { display: block; }
 
 /** media queries **/
 @media screen and (max-width: 780px) {
-  #portfolio li {
-    width: 45%;
-  }
+	.portfolio li {
+		width: 45%;
+	}
 }
 
 @media screen and (max-width: 550px) {
-  #portfolio { 
-    text-align: center;
-  }
+	.portfolio { 
+		text-align: center;
+	}
   
-  #portfolio li {
-    float: none;
-    display: inline-block;
-    width: 80%;
-    margin-bottom: 30px;
-  }
+	.portfolio li {
+		float: none;
+		display: inline-block;
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.contentwrapper {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	#header {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	#header p {
+		margin-left: 5px;
+	}
+
+	#content-left {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.pic {
+		margin-top: 0px;
+	}
+
+	#content-right {
+		width: 100%;
+		margin-left: 0px;
+		padding: 20px;
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
